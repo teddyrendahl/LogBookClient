@@ -14,9 +14,9 @@ handler.setFormatter(formatter)
 logger.addHandler(handler)
 
 
-from client            import ElogClient
-from datatypes         import LogEntry, Logbook, Tag, Attachment
-from LogBookWebService import LogBookWebService
+from .client            import ElogClient
+from .datatypes         import LogEntry, Logbook, Tag, Attachment
+from .LogBookWebService import LogBookWebService
 
 from ._version import get_versions
 __version__ = get_versions()['version']
