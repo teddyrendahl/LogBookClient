@@ -1,0 +1,4 @@
+requests
+simplejson
+MySQL-python
+six
