@@ -1,8 +1,10 @@
+import versioneer
 from setuptools import setup, find_packages
 
 setup(
     name='logbookclient',
-    version='0.0.4',
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     description='This is a python client for the PCDS logbook. It also contains the QT based grabber.',
     url='https://pswww.slac.stanford.edu/svn/psdmrepo/LogBookClient',
     author='Igor Gaponenko/Mikhail Dubrovin',
